@@ -1,0 +1,8 @@
+C:\Programming\Sklok\Sklok\bin\Debug\Sklok.exe
+C:\Programming\Sklok\Sklok\bin\Debug\Sklok.pdb
+C:\Programming\Sklok\Sklok\obj\Debug\ResolveAssemblyReference.cache
+C:\Programming\Sklok\Sklok\obj\Debug\Sklok.Properties.Resources.resources
+C:\Programming\Sklok\Sklok\obj\Debug\Sklok.csproj.GenerateResource.Cache
+C:\Programming\Sklok\Sklok\obj\Debug\Sklok.exe
+C:\Programming\Sklok\Sklok\obj\Debug\Sklok.pdb
+C:\Programming\Sklok\Sklok\obj\Debug\Sklok.BaseScreen.resources

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklok", "Sklok\Sklok.csproj", "{FC6D4C23-2898-4D7F-8F0B-72C6AD4E29B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC6D4C23-2898-4D7F-8F0B-72C6AD4E29B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6D4C23-2898-4D7F-8F0B-72C6AD4E29B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6D4C23-2898-4D7F-8F0B-72C6AD4E29B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6D4C23-2898-4D7F-8F0B-72C6AD4E29B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
