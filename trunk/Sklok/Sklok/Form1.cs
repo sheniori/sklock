@@ -36,5 +36,13 @@ namespace Sklok
         {
             Application.Exit();
         }
+
+        private void buttonLock_Click(object sender, EventArgs e)
+        {
+            Forms.LockScreen bckgrnd = new Sklok.Forms.LockScreen();
+            bckgrnd.Activate();
+            this.TopMost = false;
+            bckgrnd.Show();
+        }
     }
 }
