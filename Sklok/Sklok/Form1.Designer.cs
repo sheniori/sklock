@@ -90,12 +90,13 @@
             this.buttonLock.TabIndex = 1;
             this.buttonLock.Text = "Lock";
             this.buttonLock.UseVisualStyleBackColor = true;
+            this.buttonLock.Click += new System.EventHandler(this.buttonLock_Click);
             // 
             // BaseScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 290);
+            this.ClientSize = new System.Drawing.Size(500, 286);
             this.ControlBox = false;
             this.Controls.Add(this.buttonLock);
             this.Controls.Add(this.passEnter);
