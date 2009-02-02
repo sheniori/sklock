@@ -19,7 +19,7 @@ namespace Sklok
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void passEnter_Click(object sender, EventArgs e)
@@ -40,9 +40,27 @@ namespace Sklok
         private void buttonLock_Click(object sender, EventArgs e)
         {
             Forms.LockScreen bckgrnd = new Sklok.Forms.LockScreen();
-            bckgrnd.Activate();
+            this.AddOwnedForm(bckgrnd);
             this.TopMost = false;
-            bckgrnd.Show();
+            if (!(bckgrnd.Visible))
+            {
+                bckgrnd.TopMost = true;
+                bckgrnd.Show();
+            }
+            else
+            {
+                bckgrnd.Dispose();
+            }
+        }
+
+        ~BaseScreen()
+        {
+            notiCon.Dispose();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

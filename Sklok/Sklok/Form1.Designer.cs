@@ -36,6 +36,7 @@
             this.Show = new System.Windows.Forms.ToolStripMenuItem();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonLock = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.rightClickMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,12 +93,23 @@
             this.buttonLock.UseVisualStyleBackColor = true;
             this.buttonLock.Click += new System.EventHandler(this.buttonLock_Click);
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(40, 235);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(85, 45);
+            this.buttonExit.TabIndex = 2;
+            this.buttonExit.Text = "EXIT";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // BaseScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 286);
+            this.ClientSize = new System.Drawing.Size(496, 282);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonLock);
             this.Controls.Add(this.passEnter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -121,6 +133,7 @@
         private System.Windows.Forms.ToolStripMenuItem Show;
         private System.Windows.Forms.ToolStripMenuItem Exit;
         private System.Windows.Forms.Button buttonLock;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
 
