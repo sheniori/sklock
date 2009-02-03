@@ -5,7 +5,8 @@ using System.Runtime.InteropServices;
 
 /*
  * Author : Nauman Leghari
- * Found at: http://weblogs.asp.net/nleghari/articles/webcam.aspx
+ * Website: http://weblogs.asp.net/nleghari
+ * This code found at: http://weblogs.asp.net/nleghari/articles/webcam.aspx
  */
 
 namespace WebCamLib
