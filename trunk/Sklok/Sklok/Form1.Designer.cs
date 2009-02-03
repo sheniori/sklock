@@ -35,9 +35,24 @@
             this.rightClickMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Show = new System.Windows.Forms.ToolStripMenuItem();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.menuTabs = new System.Windows.Forms.TabControl();
+            this.menuMain = new System.Windows.Forms.TabPage();
+            this.menuPass = new System.Windows.Forms.TabPage();
             this.buttonLock = new System.Windows.Forms.Button();
-            this.buttonExit = new System.Windows.Forms.Button();
+            this.oldPassword = new System.Windows.Forms.TextBox();
+            this.newPassword1 = new System.Windows.Forms.TextBox();
+            this.newPassword2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.passChange = new System.Windows.Forms.Button();
             this.rightClickMenu.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.menuTabs.SuspendLayout();
+            this.menuMain.SuspendLayout();
+            this.menuPass.SuspendLayout();
             this.SuspendLayout();
             // 
             // passEnter
@@ -83,45 +98,167 @@
             this.Exit.Text = "Exit";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 264);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(492, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // statLabel
+            // 
+            this.statLabel.AutoSize = false;
+            this.statLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
+            this.statLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
+            this.statLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statLabel.MergeAction = System.Windows.Forms.MergeAction.Replace;
+            this.statLabel.Name = "statLabel";
+            this.statLabel.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.statLabel.Size = new System.Drawing.Size(200, 17);
+            this.statLabel.Text = "Lock Status: Ready";
+            this.statLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // menuTabs
+            // 
+            this.menuTabs.Controls.Add(this.menuMain);
+            this.menuTabs.Controls.Add(this.menuPass);
+            this.menuTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuTabs.HotTrack = true;
+            this.menuTabs.Location = new System.Drawing.Point(0, 0);
+            this.menuTabs.Name = "menuTabs";
+            this.menuTabs.SelectedIndex = 0;
+            this.menuTabs.Size = new System.Drawing.Size(492, 264);
+            this.menuTabs.TabIndex = 4;
+            // 
+            // menuMain
+            // 
+            this.menuMain.BackColor = System.Drawing.Color.SteelBlue;
+            this.menuMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.menuMain.Controls.Add(this.buttonLock);
+            this.menuMain.Location = new System.Drawing.Point(4, 22);
+            this.menuMain.Name = "menuMain";
+            this.menuMain.Padding = new System.Windows.Forms.Padding(3);
+            this.menuMain.Size = new System.Drawing.Size(484, 238);
+            this.menuMain.TabIndex = 0;
+            this.menuMain.Text = "Main Menu";
+            // 
+            // menuPass
+            // 
+            this.menuPass.BackColor = System.Drawing.Color.SteelBlue;
+            this.menuPass.Controls.Add(this.passChange);
+            this.menuPass.Controls.Add(this.label3);
+            this.menuPass.Controls.Add(this.label2);
+            this.menuPass.Controls.Add(this.label1);
+            this.menuPass.Controls.Add(this.newPassword2);
+            this.menuPass.Controls.Add(this.newPassword1);
+            this.menuPass.Controls.Add(this.oldPassword);
+            this.menuPass.Location = new System.Drawing.Point(4, 22);
+            this.menuPass.Name = "menuPass";
+            this.menuPass.Padding = new System.Windows.Forms.Padding(3);
+            this.menuPass.Size = new System.Drawing.Size(484, 238);
+            this.menuPass.TabIndex = 1;
+            this.menuPass.Text = "Password Settings";
+            // 
             // buttonLock
             // 
-            this.buttonLock.Location = new System.Drawing.Point(377, 236);
+            this.buttonLock.Location = new System.Drawing.Point(362, 187);
             this.buttonLock.Name = "buttonLock";
             this.buttonLock.Size = new System.Drawing.Size(114, 45);
-            this.buttonLock.TabIndex = 1;
+            this.buttonLock.TabIndex = 2;
             this.buttonLock.Text = "Lock";
             this.buttonLock.UseVisualStyleBackColor = true;
-            this.buttonLock.Click += new System.EventHandler(this.buttonLock_Click);
             // 
-            // buttonExit
+            // oldPassword
             // 
-            this.buttonExit.Location = new System.Drawing.Point(40, 235);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(85, 45);
-            this.buttonExit.TabIndex = 2;
-            this.buttonExit.Text = "EXIT";
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.oldPassword.Location = new System.Drawing.Point(235, 18);
+            this.oldPassword.Name = "oldPassword";
+            this.oldPassword.PasswordChar = '¤';
+            this.oldPassword.Size = new System.Drawing.Size(224, 20);
+            this.oldPassword.TabIndex = 0;
+            this.oldPassword.WordWrap = false;
+            // 
+            // newPassword1
+            // 
+            this.newPassword1.Location = new System.Drawing.Point(235, 44);
+            this.newPassword1.Name = "newPassword1";
+            this.newPassword1.PasswordChar = '¤';
+            this.newPassword1.Size = new System.Drawing.Size(224, 20);
+            this.newPassword1.TabIndex = 1;
+            // 
+            // newPassword2
+            // 
+            this.newPassword2.Location = new System.Drawing.Point(235, 70);
+            this.newPassword2.Name = "newPassword2";
+            this.newPassword2.PasswordChar = '¤';
+            this.newPassword2.Size = new System.Drawing.Size(224, 20);
+            this.newPassword2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(81, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Enter Current Password";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(81, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Enter New Password";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(81, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Re-Enter New Password";
+            // 
+            // passChange
+            // 
+            this.passChange.Location = new System.Drawing.Point(176, 123);
+            this.passChange.Name = "passChange";
+            this.passChange.Size = new System.Drawing.Size(117, 36);
+            this.passChange.TabIndex = 6;
+            this.passChange.Text = "Change Password";
+            this.passChange.UseVisualStyleBackColor = true;
+            this.passChange.Click += new System.EventHandler(this.passChange_Click);
             // 
             // BaseScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 282);
-            this.ControlBox = false;
-            this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonLock);
+            this.ClientSize = new System.Drawing.Size(492, 286);
+            this.Controls.Add(this.menuTabs);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.passEnter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BaseScreen";
             this.Opacity = 0.75;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.rightClickMenu.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.menuTabs.ResumeLayout(false);
+            this.menuMain.ResumeLayout(false);
+            this.menuPass.ResumeLayout(false);
+            this.menuPass.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,8 +269,19 @@
         private System.Windows.Forms.ContextMenuStrip rightClickMenu;
         private System.Windows.Forms.ToolStripMenuItem Show;
         private System.Windows.Forms.ToolStripMenuItem Exit;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel statLabel;
+        private System.Windows.Forms.TabControl menuTabs;
+        private System.Windows.Forms.TabPage menuMain;
         private System.Windows.Forms.Button buttonLock;
-        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.TabPage menuPass;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox newPassword2;
+        private System.Windows.Forms.TextBox newPassword1;
+        private System.Windows.Forms.TextBox oldPassword;
+        private System.Windows.Forms.Button passChange;
     }
 }
 

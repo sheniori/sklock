@@ -19,6 +19,8 @@ namespace Sklok.Forms
             this.Width = Screen.PrimaryScreen.Bounds.Width + 10;
             this.Height = Screen.PrimaryScreen.Bounds.Height + 10;
             this.Opacity = 50 ;
+            this.TopLevel = true;
+            this.TopMost = true;
             this.Location = new Point(0, 0);
         }
 
@@ -29,11 +31,6 @@ namespace Sklok.Forms
             //countdown.Elapsed += new ElapsedEventHandler(OnTimer);
             //countdown.Interval = 5000;
             //countdown.Enabled = true;
-        }
-
-        private void OnTimer(Object source, ElapsedEventArgs e)
-        {
-            BaseScreen.ActiveForm.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)

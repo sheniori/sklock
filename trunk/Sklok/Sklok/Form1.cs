@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
@@ -58,9 +59,28 @@ namespace Sklok
             notiCon.Dispose();
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void mainExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void passChange_Click(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.gothrough.ToString() == oldPassword.Text.ToString())
+            {
+                if (newPassword1.Text.ToString() == newPassword2.Text.ToString())
+                    Properties.Settings.Default.gothrough = newPassword2.Text.ToString();
+                else
+                {
+                    MessageBox.Show("New Passwords must match.", "Unmatched Password");
+                    oldPassword.Text = newPassword1.Text = newPassword2.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid Password Entered", "ERROR");
+                oldPassword.Text = newPassword1.Text = newPassword2.Text = "";
+            }
         }
     }
 }
