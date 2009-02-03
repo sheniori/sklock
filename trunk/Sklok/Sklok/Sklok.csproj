@@ -87,10 +87,74 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="WebCamLib\Device.cs" />
+    <Compile Include="WebCamLib\DeviceManager.cs" />
+    <Compile Include="WebCamLib\Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Resources\Habrok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebCamLib\bin\Debug\WebCamLib.dll" />
+    <Content Include="WebCamLib\bin\Debug\WebCamLib.pdb" />
+    <Content Include="WebCamLib\obj\Debug\Refactor\WebCamLib.dll" />
+    <Content Include="WebCamLib\obj\Debug\WebCamLib.csproj.FileListAbsolute.txt" />
+    <Content Include="WebCamLib\obj\Debug\WebCamLib.dll" />
+    <Content Include="WebCamLib\obj\Debug\WebCamLib.pdb" />
+    <Content Include="WebCamLib\obj\WebCamLib.csproj.FileList.txt" />
+    <Content Include="WebCamLib\Version.txt" />
+    <Content Include="WebCamLib\WebCamLib.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebCamLib\.svn\prop-base\" />
+    <Folder Include="WebCamLib\.svn\props\" />
+    <Folder Include="WebCamLib\.svn\text-base\" />
+    <Folder Include="WebCamLib\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\bin\.svn\prop-base\" />
+    <Folder Include="WebCamLib\bin\.svn\props\" />
+    <Folder Include="WebCamLib\bin\.svn\text-base\" />
+    <Folder Include="WebCamLib\bin\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\bin\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\bin\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\bin\Debug\.svn\prop-base\" />
+    <Folder Include="WebCamLib\bin\Debug\.svn\props\" />
+    <Folder Include="WebCamLib\bin\Debug\.svn\text-base\" />
+    <Folder Include="WebCamLib\bin\Debug\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\bin\Debug\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\bin\Debug\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\obj\.svn\prop-base\" />
+    <Folder Include="WebCamLib\obj\.svn\props\" />
+    <Folder Include="WebCamLib\obj\.svn\text-base\" />
+    <Folder Include="WebCamLib\obj\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\obj\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\obj\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\obj\Debug\.svn\prop-base\" />
+    <Folder Include="WebCamLib\obj\Debug\.svn\props\" />
+    <Folder Include="WebCamLib\obj\Debug\.svn\text-base\" />
+    <Folder Include="WebCamLib\obj\Debug\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\obj\Debug\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\obj\Debug\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\obj\Debug\Refactor\.svn\prop-base\" />
+    <Folder Include="WebCamLib\obj\Debug\Refactor\.svn\props\" />
+    <Folder Include="WebCamLib\obj\Debug\Refactor\.svn\text-base\" />
+    <Folder Include="WebCamLib\obj\Debug\Refactor\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\obj\Debug\Refactor\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\obj\Debug\Refactor\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\obj\Debug\TempPE\.svn\prop-base\" />
+    <Folder Include="WebCamLib\obj\Debug\TempPE\.svn\props\" />
+    <Folder Include="WebCamLib\obj\Debug\TempPE\.svn\text-base\" />
+    <Folder Include="WebCamLib\obj\Debug\TempPE\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\obj\Debug\TempPE\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\obj\Debug\TempPE\.svn\tmp\text-base\" />
+    <Folder Include="WebCamLib\Properties\.svn\prop-base\" />
+    <Folder Include="WebCamLib\Properties\.svn\props\" />
+    <Folder Include="WebCamLib\Properties\.svn\text-base\" />
+    <Folder Include="WebCamLib\Properties\.svn\tmp\prop-base\" />
+    <Folder Include="WebCamLib\Properties\.svn\tmp\props\" />
+    <Folder Include="WebCamLib\Properties\.svn\tmp\text-base\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
