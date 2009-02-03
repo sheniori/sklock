@@ -8,6 +8,7 @@ using System.Text;
 using System.Security.Cryptography;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using WebCamLib;
 
 namespace Sklok
 {

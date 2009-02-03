@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
 
+/*
+ * Author : Nauman Leghari
+ * Found at: http://weblogs.asp.net/nleghari/articles/webcam.aspx
+ */
+
 namespace WebCamLib
 {
     public class Device
