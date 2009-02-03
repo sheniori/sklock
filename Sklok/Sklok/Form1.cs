@@ -13,9 +13,11 @@ namespace Sklok
 {
     public partial class BaseScreen : Form
     {
+        string passString = "";
         public BaseScreen()
         {
             InitializeComponent();
+            passString = Properties.Settings.Default.gothrough.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,18 +42,18 @@ namespace Sklok
 
         private void buttonLock_Click(object sender, EventArgs e)
         {
-            Forms.LockScreen bckgrnd = new Sklok.Forms.LockScreen();
-            this.AddOwnedForm(bckgrnd);
-            this.TopMost = false;
-            if (!(bckgrnd.Visible))
-            {
-                bckgrnd.TopMost = true;
-                bckgrnd.Show();
-            }
-            else
-            {
-                bckgrnd.Dispose();
-            }
+            //Forms.LockScreen bckgrnd = new Sklok.Forms.LockScreen();
+            //this.AddOwnedForm(bckgrnd);
+            //this.TopMost = false;
+            //if (!(bckgrnd.Visible))
+            //{
+            //    bckgrnd.TopMost = true;
+            //    bckgrnd.Show();
+            //}
+            //else
+            //{
+            //    bckgrnd.Dispose();
+            //}
         }
 
         ~BaseScreen()
@@ -66,10 +68,24 @@ namespace Sklok
 
         private void passChange_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.gothrough.ToString() == oldPassword.Text.ToString())
+            MD5 word = new MD5CryptoServiceProvider();
+            byte[] s = new byte[1000000];
+            string temp;
+            s = System.Text.Encoding.Unicode.GetBytes(oldPassword.Text.ToString());
+            s = word.ComputeHash(s);
+            temp = Convert.ToBase64String(s);
+            s = new byte[1000000];
+
+            if ((passString == temp) || (passString == oldPassword.Text.ToString()))
             {
                 if (newPassword1.Text.ToString() == newPassword2.Text.ToString())
-                    Properties.Settings.Default.gothrough = newPassword2.Text.ToString();
+                {
+                    s = System.Text.Encoding.Unicode.GetBytes(newPassword2.Text.ToString());
+                    s = word.ComputeHash(s);
+                    passString = Convert.ToBase64String(s);
+                    Properties.Settings.Default.gothrough = passString.ToString();
+                    MessageBox.Show("Password changed to the Hash:\n" + passString.ToString(), "Password Changed");
+                }
                 else
                 {
                     MessageBox.Show("New Passwords must match.", "Unmatched Password");
