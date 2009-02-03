@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\WebCamLib.dll
+bin\Debug\WebCamLib.pdb
+obj\Debug\WebCamLib.dll
+obj\Debug\WebCamLib.pdb
