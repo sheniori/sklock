@@ -4,6 +4,12 @@ using System.Text;
 using System.Collections;
 using System.Runtime.InteropServices;
 
+/*
+ * Author : Nauman Leghari
+ * Website: http://weblogs.asp.net/nleghari
+ * This code found at: http://weblogs.asp.net/nleghari/articles/webcam.aspx
+ */
+
 namespace WebCamLib
 {
     public class DeviceManager
