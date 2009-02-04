@@ -48,8 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Lock.cs" />
-    <Compile Include="Classes\Win32.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
