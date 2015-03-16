@@ -1,0 +1,1 @@
+This is an open source utility which is mainly designed to allow the user to lock their screens, preventing unwanted use of their computer, while it is still turned on and running programs. Various Special features will be released as per the launch date.
